@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+
+# Frontend build output
+frontend/dist/
+frontend/config/dist/
+
+# Python / backend
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# Environment & secrets
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Test & coverage
+coverage/
+.nyc_output/
+.pytest_cache/
+htmlcov/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Misc
+.cache/
+*.local

@@ -1,0 +1,27 @@
+.chatbot {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
+  h1 {
+    margin: 0 0 20px;
+    color: #1a1a1a;
+  }
+
+  input {
+    padding: 10px;
+    width: min(300px, 100%);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #e23744;
+    color: #fff;
+    cursor: pointer;
+  }
+}

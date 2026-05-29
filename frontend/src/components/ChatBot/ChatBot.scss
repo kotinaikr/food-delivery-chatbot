@@ -1,27 +1,58 @@
+@use "../../assets/styles/abstracts/variables" as *;
+@use "../../assets/styles/abstracts/mixins" as *;
+
 .chatbot {
-  max-width: 640px;
+  max-width: $container-max-width;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: $spacing-3xl $container-padding;
 
   h1 {
-    margin: 0 0 20px;
-    color: #1a1a1a;
+    @include heading($font-size-xl);
+    margin-bottom: $spacing-xl;
   }
 
-  input {
-    padding: 10px;
-    width: min(300px, 100%);
-    border: 1px solid #ccc;
-    border-radius: 4px;
+  &__controls {
+    @include flex-row-align-center($spacing-md);
+
+    input {
+      @include text-input;
+      flex: 1;
+      width: auto;
+      min-width: 0;
+    }
+
+    button {
+      @include primary-button;
+      margin-left: 0;
+    }
   }
 
-  button {
-    padding: 10px 20px;
-    margin-left: 10px;
-    border: none;
-    border-radius: 4px;
-    background: #e23744;
-    color: #fff;
-    cursor: pointer;
+  &__section {
+    margin-top: $spacing-2xl;
+
+    h2 {
+      @include heading($font-size-md);
+      margin-bottom: $spacing-md;
+    }
+  }
+
+  &__response {
+    @include card-panel;
+  }
+
+  &__error {
+    margin-top: $spacing-md;
+    color: $color-error;
+    font-size: $font-size-sm;
+  }
+
+  &__orders {
+    margin-top: $spacing-lg;
+    padding-left: $spacing-xl;
+  }
+
+  &__order-detail {
+    @include card-panel;
+    overflow-x: auto;
   }
 }

@@ -1,6 +1,12 @@
+@use "./abstracts/variables" as *;
+
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $color-text-primary;
+  background: $color-bg-page;
 }
 
 #root,

@@ -1,0 +1,17 @@
+@use "../../assets/styles/abstracts/variables" as *;
+@use "../../assets/styles/abstracts/mixins" as *;
+
+.global-error {
+  @include error-banner;
+
+  p {
+    margin: 0;
+    flex: 1;
+    font-size: $font-size-sm;
+    line-height: $line-height-base;
+  }
+
+  &__close {
+    @include icon-button;
+  }
+}

@@ -1,0 +1,29 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging
+*.egg-info/
+.eggs/
+*.egg
+dist/
+build/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage/
+
+# Type checkers & linters
+.mypy_cache/
+.ruff_cache/
+
+# Logs
+*.log

@@ -1,0 +1,10 @@
+@use "../../assets/styles/abstracts/variables" as *;
+@use "../../assets/styles/abstracts/mixins" as *;
+
+.global-loader {
+  @include overlay-backdrop;
+
+  &__spinner {
+    @include spinner;
+  }
+}

@@ -1,0 +1,16 @@
+# Environment & secrets (repo-wide)
+.env
+.env.*
+!.env.example
+
+# Logs
+logs/
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini

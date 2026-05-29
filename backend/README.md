@@ -204,7 +204,7 @@ Create `.env`
 ```env
 GOOGLE_API_KEY=YOUR_GEMINI_API_KEY
 
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/
 ```
 
 ---
@@ -222,8 +222,8 @@ Create a free account and cluster.
 Example:
 
 ```text
-Username: admin
-Password: admin123
+Username
+Password
 ```
 
 ---
@@ -243,13 +243,13 @@ Allow:
 Example:
 
 ```text
-mongodb+srv://admin:password@cluster.mongodb.net/
+mongodb+srv://<username>:<password>@<cluster>.mongodb.net/
 ```
 
 Update `.env`
 
 ```env
-MONGO_URI=mongodb+srv://admin:password@cluster.mongodb.net/
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/
 ```
 
 ---
